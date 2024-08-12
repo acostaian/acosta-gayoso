@@ -1,0 +1,90 @@
+* {
+    font-family: "Zilla Slab", serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-color: black;
+
+    --title-color: rgba(0, 0, 0, 0.8);
+    /* --background-color: white; */
+
+    --light-color: rgba(0, 0, 0, 0.2);
+    --lighter-color: rgba(0, 0, 0, 0.1);
+
+    scroll-behavior: smooth; 
+}
+
+html {
+    scroll-padding-top: 172px;
+}
+
+body {
+    padding: 0rem 3rem;
+    background-color: var(--background-color);
+}
+
+#main-header {
+    position: sticky;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    background-color: var(--background-color);
+}
+
+#main-title {
+    color: var(--title-color);
+    font-weight: 600;
+    /* font-style: italic; */
+    font-size: 4rem;
+    /* text-align: center; */
+
+    padding: 1.5rem 0rem;
+}
+
+#menu-list {
+    border-top: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--light-color);
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+}
+
+.menu-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 0rem;
+
+    transition: background-color 200ms;
+}
+
+.menu-link:hover {
+    background-color: var(--lighter-color);
+}
+
+.menu-link:any-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.page-section {
+    margin-top: 1rem;
+    height: 100vh;
+}
