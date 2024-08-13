@@ -1,14 +1,6 @@
-* {
-    font-family: "Zilla Slab", system-ui;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --font-color: black;
 
-    --title-color: rgba(0, 0, 0, 0.8);
     --background-color: white;
 
     --light-color: rgba(0, 0, 0, 0.2);
@@ -17,6 +9,14 @@
     --header-height: 10rem;
 
     scroll-behavior: smooth; 
+}
+
+* {
+    font-family: "Zilla Slab", system-ui, serif;
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -50,7 +50,7 @@ body {
     display: flex;
     align-items: center;
 
-    color: var(--title-color);
+    color: var(--font-color);
     font-weight: 600;
     font-size: 4rem;
     /* font-style: italic; */
