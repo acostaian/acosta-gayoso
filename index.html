@@ -17,27 +17,35 @@
         <nav id="menu">
             <ul id="menu-list" type="none">
                 <li id="item-about" class="menu-item">
-                    <a id="link-about" class="menu-link" href="#about">About</a>
+                    <a id="link-about" class="menu-link" href="#about" onclick="activateSection(event.target)">About</a>
                 </li>
                 <li id="item-projects" class="menu-item">
-                    <a id="link-projects" class="menu-link" href="#projects">Projects</a>
+                    <a id="link-projects" class="menu-link" href="#projects" onclick="activateSection(event.target)">Projects</a>
                 </li>
                 <li id="item-others" class="menu-item">
-                    <a id="link-others" class="menu-link" href="#others">Others</a>
+                    <a id="link-others" class="menu-link" href="#others" onclick="activateSection(event.target)">Others</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main id="main-content">
         <section id="about" class="page-section">
-            <h3>About</h3>
+            <h2 id="about-title" class="section-title">About</h2>
+            <section id="description" class="sub-section"></section>
+            <section id="experience" class="sub-section"></section>
+            <section id="education" class="sub-section"></section>
         </section>
         <section id="projects" class="page-section">
-            <h3>Projects</h3>
+            <h2 id="projects-title" class="section-title">Projects</h2>
+            <section id="project-one" class="sub-section"></section>
+            <section id="project-two" class="sub-section"></section>
+            <section id="project-three" class="sub-section"></section>
         </section>
         <section id="others" class="page-section">
-            <h3>Others</h3>
+            <h2 id="others-title" class="section-title">Others</h2>
+            <section id="others" class="sub-section"></section>
         </section>
     </main>
 </body>
+<script src="app.js"></script>
 </html>
